@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+docker restart $1 && docker logs -f --tail=1 $1
+
