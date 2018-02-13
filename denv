@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-docker exec $1 env
+docker exec $1 env | sort
 
