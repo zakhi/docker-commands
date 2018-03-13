@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-docker logs $1 | less -S
+docker logs $1 2>&1 | less -S
 
