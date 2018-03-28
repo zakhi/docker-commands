@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 
-docker logs $1 2>&1 | less -S
+if [ -n "$2" ]; then
+  tail="--tail $2"
+fi
+
+docker logs $1 $tail 2>&1 | less -S
 

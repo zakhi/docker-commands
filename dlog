@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-docker logs -f --tail=20 $1
+docker logs -f --tail=${2:-20} $1
 
