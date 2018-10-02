@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+docker rmi $(docker images -a -q)
+docker volume rm $(docker volume ls -f dangling=true -q | grep -v gradle)
